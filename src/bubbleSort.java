@@ -63,4 +63,13 @@ public class bubbleSort {
 	public void ActualSort() {
 		
 	}
+
+	public double []getSubArray1() {
+		// TODO Auto-generated method stub
+		return _subArray_1;
+	}
+	public double []getSubArray2() {
+		// TODO Auto-generated method stub
+		return _subArray_2;
+	}
 }

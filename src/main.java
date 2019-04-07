@@ -22,8 +22,8 @@ public class main {
 		bs.print_array();
 		
 		System.out.println(n);
-		for (int i = 0; i < 8; i++) {
-			Thread object = new Thread(new MultithreadingDemo());
+		for (int i = 0; i < 2; i++) {
+			Thread object = new Thread(new MultithreadingDemo(bs.getSubArray1(),bs.getSubArray2()));
 			object.start();
 		}
 	}
