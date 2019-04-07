@@ -18,14 +18,18 @@ public class main {
 			darray[i] = rand.nextInt((max - min) + 1) + min;
 		}
 		
-		bubbleSort bs = new bubbleSort(darray);
+		ArraySeparation bs = new ArraySeparation(darray);
 		bs.print_array();
 		
 		System.out.println(n);
-		for (int i = 0; i < 2; i++) {
-			Thread object = new Thread(new MultithreadingDemo(bs.getSubArray1(),bs.getSubArray2()));
-			object.start();
-		}
+			
+		Thread object = new Thread(new MultithreadingDemo(bs.getSubArray1()));
+		object.start();
+		
+		Thread object2 = new Thread(new MultithreadingDemo(bs.getSubArray2()));
+		object2.start();
+		
+		
 	}
 	
 	public static String example() {
