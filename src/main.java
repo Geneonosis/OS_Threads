@@ -14,6 +14,9 @@ public class main {
 		int max = 100;
 		int min = 0;
 		int n = Integer.parseInt(args[0]);
+		
+		System.out.println("N = " + n);
+		
 		double darray[] = new double[n];
 		double darray2[] = new double[n];
 
